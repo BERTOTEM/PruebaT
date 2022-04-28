@@ -208,8 +208,8 @@ public class PruebaT{
         int salida=0,salidan=0,salidad=0,salidam=0,salidamm=0,Ganancia=0,DatosGuardados=0,Bucle=0;  
         while(Bucle==0){
         System.out.println("BIENVENIDO AL JUEGO QUIEN QUIERE SER MILLONARIO\n");
-        System.out.println("-preciona 1 para ver la tabla de historicos de los jugadores anterios");
-        System.out.println("-preciona 2 para iniciar tu partida");
+        System.out.println("-presiona 1 para ver la tabla de historicos de los jugadores anterios");
+        System.out.println("-presiona 2 para iniciar tu partida");
         Scanner dc = new Scanner(System.in);
         String NombreJ;
         String EdadJ;
@@ -266,11 +266,11 @@ public class PruebaT{
         historico.Lectura();   
         }
         System.out.println(" GRACIAS POR JUGAR QUIEN QUIERE SER MILLONARIO\n");
-        System.out.println("-preciona 1 para guardar tus datos y puntuacion");
-        System.out.println("-preciona 2 si solo quieres salir del juego");
+        System.out.println("-presiona 1 para guardar tus datos y puntuacion");
+        System.out.println("-presiona 2 si solo quieres salir del juego");
         DatosGuardados = dc.nextInt();
         if(DatosGuardados == 1){
-        System.out.println("-Dime tu nombre seguido de tu nombre ejm(julian 23)");
+        System.out.println("-Dime tu nombre seguido de tu edad ejm(julian 23)");
         NombreJ = dc.next();
         EdadJ = dc.next();
         jugador jugadorp = new jugador();
