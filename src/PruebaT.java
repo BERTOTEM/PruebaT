@@ -239,7 +239,7 @@ public class PruebaT{
             System.out.println("  DESEA CONTINUAR? 1.SI 2.NO ?\n");
             salidad = dc.nextInt();}
         
-        if((dificil.getAciertos()== 1) && (salidan==1)){       
+        if((dificil.getAciertos()== 1) && (salidad==1)){       
             Mdificil.preguntar();
         if(Mdificil.getFallos()== 0){
             Ganancia=Ganancia*4;
@@ -247,7 +247,7 @@ public class PruebaT{
             System.out.println("  DESEA CONTINUAR? 1.SI 2.NO ?\n");
             salidam = dc.nextInt();}
         
-        if((Mdificil.getAciertos()== 1) && (salidan==1)){
+        if((Mdificil.getAciertos()== 1) && (salidam==1)){
             MMdificil.preguntar();
         if(MMdificil.getFallos()== 0){
             Ganancia=Ganancia*5;
@@ -255,7 +255,7 @@ public class PruebaT{
             System.out.println("  DESEA CONTINUAR? 1.SI 2.NO ?\n");
             salidamm = dc.nextInt();}
 
-        if((MMdificil.getAciertos()== 1) && (salidan==1)){
+        if((MMdificil.getAciertos()== 1) && (salidamm==1)){
             System.out.println("FELICIDADES ACABAS DE GANAR EL JUEGO");
             
             System.out.println("TE LLEVAS "+Ganancia+" DOLARES!!!!!");}}}}}
