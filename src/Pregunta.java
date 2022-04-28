@@ -53,8 +53,10 @@ class Pregunta {
         
         do{
         System.out.println("Elige un opcion valida: ");
-        respuesta = sc.nextLine().charAt(0);}
-        while(!((respuesta >= 65) && (respuesta <= 68)) ||((respuesta >= 97) && (respuesta <= 100)));
+        respuesta = sc.nextLine().charAt(0);
+        }
+        while(!(((respuesta >= 65) && (respuesta <= 68) ) 
+                ||((respuesta >= 97) && (respuesta <= 100))));
                                                     
      
         

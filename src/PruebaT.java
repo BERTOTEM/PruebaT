@@ -42,7 +42,7 @@ public class PruebaT{
                 new Respuesta("Irlanda", false),
                 new Respuesta("Kenia", false),
                 new Respuesta("Australia", true),
-                new Respuesta("Perú", false)
+                new Respuesta("Peru", false)
                 
         )));
          
