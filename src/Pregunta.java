@@ -32,7 +32,7 @@ class Pregunta {
         this.respuestas.add(r);
     }
 
-    public boolean respuestaCorrecta(String respuesta) {//metodo que invoca a respuesta el cual en confunto determina la opcion correcta
+    public boolean respuestaCorrecta(char respuesta) {//metodo que invoca a respuesta el cual en confunto determina la opcion correcta
         int indice = letras.indexOf(respuesta);
         if (indice == -1) {
             return false;
@@ -49,11 +49,14 @@ class Pregunta {
         }
         
         Scanner sc = new Scanner(System.in);
-        String respuesta;
-        System.out.println("Elige: ");
-        respuesta = sc.nextLine(); 
+        char respuesta;
+        
+        do{
+        System.out.println("Elige un opcion valida: ");
+        respuesta = sc.nextLine().charAt(0);}
+        while(!((respuesta >= 65) && (respuesta <= 68)) ||((respuesta >= 97) && (respuesta <= 100)));
                                                     
-       
+     
         
         return this.respuestaCorrecta(respuesta);
     }
